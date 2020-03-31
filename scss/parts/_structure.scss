@@ -16,6 +16,19 @@
     background: $blue-dark;
 }
 
+.primary-navigation {
+    background: $blue-light;
+    padding: 15px;
+    
+    a {
+        color: $white;
+        
+        &:hover,
+        &:focus {
+            color: $black;
+        }
+    }
+}
 
 /* Body
 --------------------------------------------- */
