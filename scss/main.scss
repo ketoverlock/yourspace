@@ -1,0 +1,65 @@
+/* Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+	- Screen Reader Text
+    - Skip Links
+    - WordPress
+- Structure
+    - Containers & General Styles
+    - Header
+    - Body
+    - Footer
+- Responsive
+    - Tablet Styles
+    - Desktop Styles
+- Print Styles
+*/
+
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@import "variables";
+
+/* HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+@import "parts/reset";
+
+/* Defaults
+---------------------------------------------------------------------------------------------------- */
+@import "parts/defaults";
+
+/* Navigation
+---------------------------------------------------------------------------------------------------- */
+@import "parts/navigation";
+
+/* Structure
+---------------------------------------------------------------------------------------------------- */
+@import "parts/structure";
+
+/* Plugins & Widgets
+---------------------------------------------------------------------------------------------------- */ 
+@import "parts/plugins-widgets";
+
+/* WooCommerce
+---------------------------------------------------------------------------------------------------- */ 
+@import "parts/woocommerce";
+
+/* Responsive Styles
+---------------------------------------------------------------------------------------------------- */
+@import "parts/768px";
+
+@import "parts/1024px";
+
+@import "parts/1300px";
+
+/* Print Styles
+---------------------------------------------------------------------------------------------------- */
+@import "parts/print";

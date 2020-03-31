@@ -1,0 +1,583 @@
+/* Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 62.5%; /* 10px browser default */
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: $white;
+	color: $grey-main;
+	font-family: $font-primary;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.8;
+	margin: 0;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img,
+.woocommerce a.button, 
+.woocommerce a.button.alt, 
+.woocommerce button.button, 
+.woocommerce button.button.alt, 
+.woocommerce input.button, 
+.woocommerce input.button.alt, 
+.woocommerce input.button[type="submit"], 
+.woocommerce #respond input#submit, 
+.woocommerce #respond input#submit.alt,
+.woocommerce ul.products li.product a,
+.more-link {
+	transition: all 0.3s ease-in-out;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+    
+    img {
+        transform: translate3d(0px,0px,0px);
+        transition: all .3s ease-in-out;
+    }
+    
+}
+
+a:focus,
+a:hover {
+	color: $color-secondary;
+	text-decoration: none;
+    
+    img {
+        opacity: .6;
+    }
+}
+
+p {
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #eee;
+	clear: both;
+	margin: 30px 0;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+mark {
+	background: $color-tertiary;
+	color: $grey-main;
+}
+
+blockquote {
+	padding: 30px;
+    margin: 30px 0;
+    background: $color-tertiary;
+
+    &:before {
+        content: "\201C";
+        display: block;
+        font-size: 30px;
+        font-size: 3rem;
+        height: 0;
+        left: -20px;
+        position: relative;
+        top: -10px;
+    }
+    
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-secondary;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+
+h1,
+.entry-title {
+    font-family: $font-secondary;
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 27px;
+	font-size: 2.7rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	vertical-align: top;
+}
+
+figure {
+	margin: 0;
+}
+
+/* Gallery
+--------------------------------------------- */
+
+.gallery {
+	overflow: hidden;
+}
+
+.gallery img {
+	height: auto;
+	padding: 4px;
+}
+
+.gallery img:focus,
+.gallery img:hover {
+    opacity: .7;
+	outline: none;
+}
+
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.6666%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.2857%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.1111%;
+}
+
+.gallery-columns-2 .gallery-item:nth-child(2n+1),
+.gallery-columns-3 .gallery-item:nth-child(3n+1),
+.gallery-columns-4 .gallery-item:nth-child(4n+1),
+.gallery-columns-5 .gallery-item:nth-child(5n+1),
+.gallery-columns-6 .gallery-item:nth-child(6n+1),
+.gallery-columns-7 .gallery-item:nth-child(7n+1),
+.gallery-columns-8 .gallery-item:nth-child(8n+1),
+.gallery-columns-9 .gallery-item:nth-child(9n+1) {
+	clear: left;
+}
+
+.gallery-item {
+	float: left;
+	margin: 0 0 8px;
+	text-align: center;
+}
+
+/* Forms
+--------------------------------------------- */
+
+label {
+    display: inline-block;
+    font-weight: 700;
+    color: $grey-main;
+}
+
+input,
+select,
+textarea,
+#add_payment_method table.cart td.actions .coupon .input-text, 
+.woocommerce-cart table.cart td.actions .coupon .input-text, 
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+    display: block;
+    width: 100%;
+    background: darken($white, 3%);
+    border: 2px solid darken($white, 3%);
+    padding: 10px !important;
+    transition: all .3s ease-in-out;
+    border-radius: 0 !important;
+    
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $color-secondary;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+    display: inline-block;
+	width: auto;
+}
+
+::-moz-placeholder {
+	color: $grey-main;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: $grey-main;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.more-link,
+.woocommerce a.button, 
+.woocommerce a.button.alt, 
+.woocommerce button.button, 
+.woocommerce button.button.alt, 
+.woocommerce input.button, 
+.woocommerce input.button.alt, 
+.woocommerce input.button[type="submit"], 
+.woocommerce #respond input#submit, 
+.woocommerce #respond input#submit.alt,
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover {
+    background: $color-primary;
+    color: $white;
+    border-color: $color-primary;
+    font-weight: 700;
+    padding: 10px 20px !important;
+    border-radius: 0;
+    line-height: 1.8 !important;
+    text-decoration: none !important;
+    -webkit-appearance: none;
+    
+    &:hover,
+    &:focus {
+        background: $color-secondary;
+        border-color: $color-secondary;
+        color: $white;
+    }
+}
+
+.button {
+	display: inline-block;
+}
+
+a.button.small,
+button.small,
+input[type="button"].small,
+input[type="reset"].small,
+input[type="submit"].small {
+	padding: 8px 16px;
+}
+
+.site-container button:disabled,
+.site-container button:disabled:hover,
+.site-container input:disabled,
+.site-container input:disabled:hover,
+.site-container input[type="button"]:disabled,
+.site-container input[type="button"]:disabled:hover,
+.site-container input[type="reset"]:disabled,
+.site-container input[type="reset"]:disabled:hover,
+.site-container input[type="submit"]:disabled,
+.site-container input[type="submit"]:disabled:hover {
+	cursor: not-allowed;
+}
+
+fieldset {
+    border: 1px solid $color-tertiary;
+    margin-bottom: 15px;
+    
+    legend {
+        padding: 15px;
+        font-weight: 700;
+        color: $color-secondary;
+    }
+}
+
+/* Search Form
+--------------------------------------------- */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+.search-form,
+.woocommerce-product-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    .search-form-input {
+        flex: 1 0 75%;
+        border-right: 0;
+    }
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	width: 100%;
+	word-break: break-all;
+}
+
+tbody {
+	border-bottom: 1px solid #eee;
+}
+
+td,
+th {
+	text-align: left;
+}
+
+td {
+	border-top: 1px solid #eee;
+	padding: 6px;
+}
+
+th {
+	font-weight: 400;
+	padding: 0 6px;
+}
+
+td:first-child,
+th:first-child {
+	padding-left: 0;
+}
+
+/* Screen Reader Text
+--------------------------------------------- */
+
+.screen-reader-shortcut,
+.screen-reader-text,
+.screen-reader-text span {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus {
+	background: $white;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	clip: auto !important;
+	color: $grey-main;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	height: auto;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Skip Links
+--------------------------------------------- */
+
+/* Display outline on focus */
+:focus {
+	color: $grey-main;
+}
+
+/* WordPress
+--------------------------------------------- */
+
+.aligncenter,
+.alignleft,
+.alignright,
+.alignwide {
+    display: block;
+	text-align: center;
+    margin: 0 auto 15px;
+}
+
+a.aligncenter img {
+	display: block;
+	margin: 0 auto;
+}
+
+a.alignnone {
+	display: inline-block;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+	max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 30px;
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: 15px;
+}
+
+.alignfull {
+    position: relative;
+    width: 100vw;
+    left: -50vw;
+    margin-left: 50% !important;
+}
+
+.gallery-caption,
+.wp-caption-text {
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
+}
+
+.more-link {
+    color: $white;
+    display: table;
+    margin: 30px auto 0;
+    text-decoration: none !important;
+    
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
+
+.more-link--search {
+    text-decoration: none !important;
+    font-weight: 700;
+}
+
+/* Clearings
+--------------------------------------------- */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
