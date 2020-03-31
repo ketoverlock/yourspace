@@ -14,6 +14,12 @@
 
 .site-header {
     background: $blue-dark;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-branding {
+    padding: 15px;
 }
 
 .site-title {
