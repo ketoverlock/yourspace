@@ -15,17 +15,18 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'yourspace' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'yourspace' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'yourspace' ), 'yourspace', '<a href="https://overlockdesign.co">Overlock Design Company, LLC</a>' );
-				?>
+            <span class="site-copyright">
+                <?php
+                /* translators: 1: Year, 2: Site Name */
+                printf( esc_html__( 'Copyright &copy; %1$s %2$s.', 'yourspace' ), date('Y'), get_bloginfo('name') );
+                ?>
+            </span>
+            <span class="theme-credits">
+                <?php
+                /* translators: 1: Theme name, 2: Theme author. */
+                printf( esc_html__( '%1$s by %2$s.', 'yourspace' ), 'YourSpace', '<a href="https://overlockdesign.co">Overlock Design Company, LLC</a>' );
+                ?>
+            </span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
