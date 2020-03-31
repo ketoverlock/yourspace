@@ -48,7 +48,7 @@ if ( ! function_exists( 'yourspace_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'yourspace_custom_background_args', array(
-			'default-color' => 'ffffff',
+			'default-color' => 'E5E5E5',
 			'default-image' => '',
 		) ) );
         
