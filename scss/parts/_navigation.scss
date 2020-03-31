@@ -46,7 +46,7 @@
     
     a {
         display: block;
-        padding: 10px 0;
+        padding: 5px 0;
         color: $white;
         
         &:hover,
@@ -62,6 +62,10 @@
     .sub-menu {
         display: none;
         background: $blue-mid-alt;
+        
+        a {
+            padding: 5px 15px;
+        }
     }
     
     .submenu-toggle {
