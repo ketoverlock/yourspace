@@ -44,9 +44,10 @@
 				<p class="site-description"><?php echo $yourspace_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+        
+        <button class="menu-toggle"><span class="screen-reader-text"><?php esc_html_e( 'Show Mobile Menu', 'yourspace' ); ?></span> <i class="fas fa-bars" aria-hidden="true"></i></button>
 
 		<nav id="site-navigation" class="primary-navigation">
-            <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Show Mobile Menu', 'yourspace' ); ?></span> <i class="fas fa-bars" aria-hidden="true"></i></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'primary-menu',

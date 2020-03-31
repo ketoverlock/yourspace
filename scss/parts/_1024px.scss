@@ -3,4 +3,23 @@
 
 @media (min-width: 1024px) {
     
+    
+    /* Header
+    --------------------------------------------- */
+    
+    .primary-navigation {
+        display: block;
+        background: $blue-mid;
+        padding: 15px;
+
+        a {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: $black;
+            }
+        }
+    }
+    
 }

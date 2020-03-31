@@ -17,17 +17,7 @@
 }
 
 .primary-navigation {
-    background: $blue-mid;
-    padding: 15px;
-    
-    a {
-        color: $white;
-        
-        &:hover,
-        &:focus {
-            color: $black;
-        }
-    }
+    display: none;
 }
 
 /* Body
