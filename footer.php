@@ -30,6 +30,15 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<nav id="mobile-navigation" class="mobile-navigation">
+    <?php
+    wp_nav_menu( array(
+        'theme_location' => 'mobile',
+        'menu_id'        => 'mobile-menu',
+    ) );
+    ?>
+</nav>
+
 <?php wp_footer(); ?>
 
 </body>

@@ -34,7 +34,8 @@ if ( ! function_exists( 'yourspace_setup' ) ) :
 
 		// Register nav menus
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'yourspace' ),
+			'primary-menu' => esc_html__( 'Primary Menu', 'yourspace' ),
+            'mobile-menu' => esc_html__( 'Mobile Menu', 'yourspace' ),
 		) );
 
 		// HTML 5 Output
