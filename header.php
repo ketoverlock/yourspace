@@ -28,7 +28,6 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -37,12 +36,7 @@
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
-			endif;
-			$yourspace_description = get_bloginfo( 'description', 'display' );
-			if ( $yourspace_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $yourspace_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			endif; ?>
 		</div><!-- .site-branding -->
         
         <button class="menu-toggle"><span class="screen-reader-text"><?php esc_html_e( 'Show Mobile Menu', 'yourspace' ); ?></span> <i class="fas fa-bars" aria-hidden="true"></i></button>
