@@ -26,14 +26,14 @@
     .woocommerce ul.products li.product h3 {
         font-size: 27px;
         font-size: 2.7rem;
-        color: $color-primary;
+        color: $blue-mid;
     }
     
     ul.products li.product .price,
     div.product p.price,
     div.product span.price {
-        color: $color-secondary;
-        font-family: $font-secondary;
+        color: $orange-light;
+        font-family: $font-primary;
         font-size: 20px;
         font-size: 2rem;
     }
@@ -50,12 +50,12 @@
         padding: 0 0 0 5px;
         
         &:before {
-            border-bottom: 1px solid $color-tertiary;
+            border-bottom: 1px solid $grey-alt;
         }
         
         li {
-            border: 1px solid $color-tertiary;
-            background: $color-tertiary;
+            border: 1px solid $grey-alt;
+            background: $grey-alt;
             border-radius: 0 !important;
             margin-right: 5px;
             
@@ -73,7 +73,7 @@
 }
 
 .onsale {
-    background-color: $color-secondary !important;
+    background-color: $orange-light !important;
     padding: 0 5px !important;
 }
 
@@ -82,7 +82,7 @@ p.demo_store {
     position: fixed !important;
     top: auto !important;
     bottom: 0 !important;
-    background-color: $color-primary !important; 
+    background-color: $blue-mid !important; 
     color: $white;
 }
 
@@ -115,7 +115,7 @@ p.demo_store {
     tbody th, 
     tfoot td, 
     tfoot th {
-        border-color: $color-tertiary;
+        border-color: $grey-alt;
         border-radius: 0;
     }
 }
@@ -128,7 +128,7 @@ p.demo_store {
     
     ul.payment_methods {
         border: 0;
-        background: $color-tertiary;
+        background: $grey-alt;
         
         li {
             list-style: none;
@@ -137,10 +137,10 @@ p.demo_store {
     }
     
     div.payment_box {
-        background: $color-tertiary;
+        background: $grey-alt;
         
         &:before {
-            border: 1em solid $color-tertiary;
+            border: 1em solid $grey-alt;
             border-right-color: transparent;
             border-left-color: transparent;
             border-top-color: transparent;
@@ -152,7 +152,7 @@ p.demo_store {
 /* My Account */
 
 .woocommerce-account .woocommerce-MyAccount-navigation {
-    background: $color-tertiary;
+    background: $grey-alt;
     
     ul {
         list-style: none;
@@ -164,14 +164,14 @@ p.demo_store {
         display: block;
         padding: 10px;
         text-align: center;
-        color: $color-primary;
-        font-family: $font-secondary;
+        color: $blue-mid;
+        font-family: $font-primary;
         text-transform: uppercase;
         
         &:hover,
         &:focus {
-            color: $color-tertiary;
-            background: $color-primary;
+            color: $grey-alt;
+            background: $blue-mid;
         }
     }
 }

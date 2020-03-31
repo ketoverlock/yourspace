@@ -11,7 +11,7 @@
 .menu-toggle,
 .menu-close {
     background: none;
-    color: $color-primary;
+    color: $blue-mid;
     font-size: 25px;
     font-size: 2.5rem;
     padding-right: 0;
@@ -20,7 +20,7 @@
     &:hover,
     &:focus {
         background: none;
-        color: $color-secondary;
+        color: $orange-light;
     }
 }
 
@@ -55,13 +55,13 @@
         font-size: 20px;
         font-size: 2rem;
         background: none;
-        color: $color-primary;
+        color: $blue-mid;
         border: 0;
         
         &:hover,
         &:focus {
             background: none;
-            color: $color-primary;
+            color: $blue-mid;
         }
     }
 

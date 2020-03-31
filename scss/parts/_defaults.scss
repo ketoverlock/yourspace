@@ -45,7 +45,7 @@ textarea:focus,
 }
 
 a {
-	color: $color-primary;
+	color: $blue-mid;
 	text-decoration: none;
     
     img {
@@ -57,7 +57,7 @@ a {
 
 a:focus,
 a:hover {
-	color: $color-secondary;
+	color: $orange-light;
 	text-decoration: none;
     
     img {
@@ -101,14 +101,14 @@ i {
 }
 
 mark {
-	background: $color-tertiary;
+	background: $grey-alt;
 	color: $grey-main;
 }
 
 blockquote {
 	padding: 30px;
     margin: 30px 0;
-    background: $color-tertiary;
+    background: $grey-alt;
 
     &:before {
         content: "\201C";
@@ -135,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-secondary;
+    font-family: $font-primary;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -143,7 +143,7 @@ h6 {
 
 h1,
 .entry-title {
-    font-family: $font-secondary;
+    font-family: $font-primary;
 	font-size: 30px;
 	font-size: 3rem;
 }
@@ -291,7 +291,7 @@ textarea,
     &:hover,
     &:focus,
     &:active {
-        border-color: $color-secondary;
+        border-color: $orange-light;
     }
 }
 
@@ -333,9 +333,9 @@ input[type="submit"],
 .woocommerce #respond input#submit, 
 .woocommerce #respond input#submit.alt,
 .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover {
-    background: $color-primary;
+    background: $blue-mid;
     color: $white;
-    border-color: $color-primary;
+    border-color: $blue-mid;
     font-weight: 700;
     padding: 10px 20px !important;
     border-radius: 0;
@@ -345,8 +345,8 @@ input[type="submit"],
     
     &:hover,
     &:focus {
-        background: $color-secondary;
-        border-color: $color-secondary;
+        background: $orange-light;
+        border-color: $orange-light;
         color: $white;
     }
 }
@@ -377,13 +377,13 @@ input[type="submit"].small {
 }
 
 fieldset {
-    border: 1px solid $color-tertiary;
+    border: 1px solid $grey-alt;
     margin-bottom: 15px;
     
     legend {
         padding: 15px;
         font-weight: 700;
-        color: $color-secondary;
+        color: $orange-light;
     }
 }
 
