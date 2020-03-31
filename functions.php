@@ -72,6 +72,7 @@ add_action( 'after_setup_theme', 'yourspace_content_width', 0 );
 function yourspace_scripts() {
 
     wp_enqueue_style( 'ys-css', get_stylesheet_directory_uri() . '/main.css', array(), THEME_VERSION );
+    wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.0.13/css/all.css', array(), null);
     
     wp_enqueue_script( 'ys-scripts', get_stylesheet_directory_uri() . '/js/min/ys-scripts.min.js', array( 'jquery' ), THEME_VERSION, true );
 	

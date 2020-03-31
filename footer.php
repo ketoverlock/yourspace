@@ -32,7 +32,7 @@
 </div><!-- #page -->
 
 <nav id="mobile-navigation" class="mobile-navigation">
-    <button class="menu-close">Close Menu</button>
+    <button class="menu-close"><span class="screen-reader-text"><?php esc_html_e( 'Close Mobile Menu', 'yourspace' ); ?></span><i class="fas fa-times" aria-hidden="true"></i></button>
     <?php
     wp_nav_menu( array(
         'theme_location' => 'mobile-menu',

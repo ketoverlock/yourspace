@@ -46,7 +46,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="primary-navigation">
-			<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false"><?php esc_html_e( 'Mobile Menu', 'yourspace' ); ?></button>
+            <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Show Mobile Menu', 'yourspace' ); ?></span> <i class="fas fa-bars" aria-hidden="true"></i></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'primary-menu',

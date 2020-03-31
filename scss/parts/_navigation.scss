@@ -11,7 +11,7 @@
 .menu-toggle,
 .menu-close {
     background: none;
-    color: $blue-mid;
+    color: $white;
     font-size: 25px;
     font-size: 2.5rem;
     padding-right: 0;
@@ -20,7 +20,7 @@
     &:hover,
     &:focus {
         background: none;
-        color: $orange-light;
+        color: $black;
     }
 }
 
