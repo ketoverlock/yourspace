@@ -31,6 +31,7 @@
 </div><!-- #page -->
 
 <nav id="mobile-navigation" class="mobile-navigation">
+    <button class="menu-close">Close Menu</button>
     <?php
     wp_nav_menu( array(
         'theme_location' => 'mobile',
