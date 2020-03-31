@@ -7,7 +7,7 @@ jQuery(function($) {
 
         $('.menu-toggle').click(function() {
             $('.site').addClass('fixed');
-            $('.mobile-navigation').addClass('mobile-nav--visible');
+            $('.mobile-navigation').addClass('mobile-navigation--visible');
         });
         
         $('.menu-close').click(function() {
