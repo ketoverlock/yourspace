@@ -53,6 +53,15 @@
         }
     }
     
+    .menu-item-has-children {
+        position: relative;
+    }
+    
+    .sub-menu {
+        display: none;
+        background: $blue-mid-alt;
+    }
+    
     .submenu-toggle {
         position: absolute;
         top: 0;
@@ -60,16 +69,21 @@
         font-size: 20px;
         font-size: 2rem;
         background: none;
-        color: $blue-mid;
+        color: $white;
         border: 0;
         
         &:hover,
         &:focus {
             background: none;
-            color: $blue-mid;
+            color: $black;
         }
     }
+}
 
+.menu-close {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .admin-bar .mobile-navigation {
