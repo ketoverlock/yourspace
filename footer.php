@@ -35,7 +35,7 @@
     <button class="menu-close">Close Menu</button>
     <?php
     wp_nav_menu( array(
-        'theme_location' => 'mobile',
+        'theme_location' => 'mobile-menu',
         'menu_id'        => 'mobile-menu',
     ) );
     ?>
