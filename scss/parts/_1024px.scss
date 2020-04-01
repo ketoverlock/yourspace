@@ -21,22 +21,55 @@
             list-style: none;
             text-align: center;
             
-            li {
+            & > li {
                 display: inline-block;
                 position: relative;
             }
-        }
+            
+            a {
+                display: block;
+                padding: 0 5px;
+                color: $white;
 
-        a {
-            display: block;
-            padding: 0 5px;
-            color: $white;
+                &:hover,
+                &:focus {
+                    color: $black;
+                }
+            }
+            
+            .sub-menu {
+                position: absolute;
+                display: none;
+                top: 100%;
+                left: 0;
+                width: 200px;
+                background: $white;
+                box-shadow: 0px 10px 15px fade-out($black, .95);
+                z-index: 1000; /* Above Everything */
 
-            &:hover,
-            &:focus {
-                color: $black;
+                li {
+                    display: block;
+                    position: relative;
+                }
+
+                a {
+                    padding: 5px 15px;
+                    text-align: left;
+                }
+
+                .sub-menu {
+                    display: none;
+                    top: 0;
+                    left: 100%;
+                }
+            }
+
+            li:hover > .sub-menu,
+            li:focus-within > .sub-menu {
+                display: block;
             }
         }
+        
     }
     
 }
