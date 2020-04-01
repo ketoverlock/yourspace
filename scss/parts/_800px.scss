@@ -1,7 +1,15 @@
 /* Large Tablet / Small Desktop Styles
 ---------------------------------------------------------------------------------------------------- */
 
-@media (min-width: 1024px) {
+@media (min-width: 780px) {
+    
+    .admin-bar .mobile-navigation {
+        top: 32px;
+    }
+    
+}
+
+@media (min-width: 800px) {
     
     
     /* Header
