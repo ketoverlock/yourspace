@@ -48,12 +48,6 @@
     padding: 20px 10px;
 }
 
-.entry-meta {
-    font-size: 11px;
-    font-size: 1.1rem;
-    padding: 0 10px;
-}
-
 .entry-title,
 .page-title {
     background: $orange-light;
@@ -63,6 +57,16 @@
     a {
         color: $orange-dark;
     }
+}
+
+.entry-meta {
+    font-size: 11px;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+.post-thumbnail {
+    margin-bottom: 10px;
 }
 
 .entry-content {
