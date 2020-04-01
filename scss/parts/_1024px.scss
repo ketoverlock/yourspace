@@ -7,13 +7,29 @@
     /* Header
     --------------------------------------------- */
     
+    .menu-toggle {
+        display: none;
+    }
+    
     .primary-navigation {
         display: block;
         width: 100%;
         background: $blue-mid;
         padding: 15px;
+        
+        .menu {
+            list-style: none;
+            text-align: center;
+            
+            li {
+                display: inline-block;
+                position: relative;
+            }
+        }
 
         a {
+            display: block;
+            padding: 0 5px;
             color: $white;
 
             &:hover,
