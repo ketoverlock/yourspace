@@ -20,7 +20,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
         
         <div class="profile-content">
             
-            <?php echo wp_get_attachment_url(get_theme_mod('profile_photo')); ?>
+            <img src="<?php echo wp_get_attachment_url(get_theme_mod('profile_photo')); ?>" alt="<?php echo esc_attr(get_theme_mod('profile_title')); ?>" class="profile-photo">
             
         </div>
         
