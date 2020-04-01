@@ -74,12 +74,12 @@ if ( ! function_exists( 'yourspace_entry_footer' ) ) :
 		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<span class="comments-link"><i class="fas fa-comment-alt" aria-hidden="true"></i> ';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( '<i class="fas fa-comment-alt" aria-hidden="true"></i> Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yourspace' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yourspace' ),
 						array(
 							'span' => array(
 								'class' => array(),
