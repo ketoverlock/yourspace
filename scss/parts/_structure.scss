@@ -160,6 +160,11 @@
     background: $orange-mid;
     border-right: 2px solid $white;
     
+    a:hover,
+    a:focus {
+        color: $black;
+    }
+    
     .says {
         display: none;
     }
@@ -170,6 +175,10 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    
+    img {
+        margin: 10px auto;
+    }
 }
 
 .comment-content {
