@@ -146,19 +146,7 @@ function yourspace_customizer( $wp_customize ) {
             ) 
     ) );
     
-    // Profile Quote
-    $wp_customize->add_setting( 'profile_quote', array(
-        'default'               => '',
-        'sanitize_callback'     => 'sanitize_text_field',
-    ) );
-    $wp_customize->add_control( 'profile_quote', array(
-        'type'          => 'text',
-        'label'         => __( 'Profile Quote', 'yourspace' ),
-        'section'       => 'yourspace_profile',
-        'settings'      => 'profile_quote',
-    ) );
-    
-    // Profile Quote
+    // Profile Text
     $wp_customize->add_setting( 'profile_text', array(
         'default'               => '',
         'sanitize_callback'     => 'wp_kses_post',
@@ -168,7 +156,7 @@ function yourspace_customizer( $wp_customize ) {
         'label'         => __( 'Profile Text', 'yourspace' ),
         'description' => __( 'Favorite quote? Age? Gender? Location?', 'yourspace' ),
         'section'       => 'yourspace_profile',
-        'settings'      => 'profile_quote',
+        'settings'      => 'profile_text',
     ) );
     
     /****************************************************************
