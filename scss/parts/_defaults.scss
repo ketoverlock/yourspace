@@ -57,7 +57,7 @@ a {
 
 a:focus,
 a:hover {
-	color: $orange-light;
+	color: $orange-dark;
 	text-decoration: none;
     
     img {
@@ -66,7 +66,7 @@ a:hover {
 }
 
 p {
-	margin: 0 0 30px;
+	margin: 0 0 15px;
 	padding: 0;
 }
 
@@ -329,8 +329,8 @@ input[type="submit"],
     
     &:hover,
     &:focus {
-        background: $orange-light;
-        border-color: $orange-light;
+        background: $orange-dark;
+        border-color: $orange-dark;
         color: $white;
     }
 }
