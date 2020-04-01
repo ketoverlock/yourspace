@@ -8,6 +8,23 @@
 
 /****************************************************************
 
+    Sanitize Code
+    
+****************************************************************/
+
+//script input sanitization function
+function yourspace_sanitize_js_code($input){
+    return base64_encode($input);
+}
+
+
+//output escape function    
+function yourspace_escape_js_output($input){
+    return esc_textarea( base64_decode($input) );
+}
+
+/****************************************************************
+
     Customizer Inputs
     
 ****************************************************************/
@@ -111,7 +128,7 @@ function yourspace_customizer( $wp_customize ) {
     ) );
     $wp_customize->add_control( 'profile_title', array(
         'type'          => 'text',
-        'label'         => __( 'Default Profile Title', 'yourspace' ),
+        'label'         => __( 'Profile Section Title', 'yourspace' ),
         'section'       => 'yourspace_profile',
         'settings'      => 'profile_title',
     ) );
@@ -121,7 +138,7 @@ function yourspace_customizer( $wp_customize ) {
     $wp_customize->add_setting('profile_photo');
     $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'profile_photo',
         array(
-            'label'     => __( 'Default Profile Image', 'yourspace' ),
+            'label'     => __( 'Profile Image', 'yourspace' ),
             'section'   => 'yourspace_profile',
             'settings'  => 'profile_photo',
             'width'     => 150,
@@ -129,8 +146,30 @@ function yourspace_customizer( $wp_customize ) {
             ) 
     ) );
     
+    // Profile Quote
+    $wp_customize->add_setting( 'profile_quote', array(
+        'default'               => '',
+        'sanitize_callback'     => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'profile_quote', array(
+        'type'          => 'text',
+        'label'         => __( 'Profile Quote', 'yourspace' ),
+        'section'       => 'yourspace_profile',
+        'settings'      => 'profile_quote',
+    ) );
     
-    
+    // Profile Quote
+    $wp_customize->add_setting( 'profile_text', array(
+        'default'               => '',
+        'sanitize_callback'     => 'wp_kses_post',
+    ) );
+    $wp_customize->add_control( 'profile_text', array(
+        'type'          => 'textarea',
+        'label'         => __( 'Profile Text', 'yourspace' ),
+        'description' => __( 'Favorite quote? Age? Gender? Location?', 'yourspace' ),
+        'section'       => 'yourspace_profile',
+        'settings'      => 'profile_quote',
+    ) );
     
     /****************************************************************
 
@@ -147,22 +186,32 @@ function yourspace_customizer( $wp_customize ) {
     
     
     // Head Code
-    $wp_customize->add_setting( 'head_code' );
+    $wp_customize->add_setting( 'head_code',
+        array(          
+            'sanitize_callback' => 'yourspace_sanitize_js_code', 
+            'sanitize_js_callback' => 'yourspace_escape_js_output' 
+        )
+    );
     $wp_customize->add_control( 'head_code', array(
         'type'        => 'textarea',
         'section'     => 'yourspace_snippets', 
         'label'       => __( 'Head Code' ),
-        'description' => __( 'Code input here will print in the head section.' ),
+        'description' => __( 'Code input here will print in the head section.', 'yourspace' ),
         'settings'      => 'head_code',
     ) );
     
     // Body Code
-    $wp_customize->add_setting( 'body_code' );
+    $wp_customize->add_setting( 'body_code',
+        array(          
+            'sanitize_callback' => 'yourspace_sanitize_js_code', 
+            'sanitize_js_callback' => 'yourspace_escape_js_output' 
+        )
+    );
     $wp_customize->add_control( 'body_code', array(
         'type'        => 'textarea',
         'section'     => 'yourspace_snippets',
         'label'       => __( 'Body Code' ),
-        'description' => __( 'Code input here will print just after the body tag.' ),
+        'description' => __( 'Code input here will print just after the body tag.', 'yourspace' ),
         'settings'      => 'body_code',
     ) );
  
