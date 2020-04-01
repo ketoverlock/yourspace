@@ -124,9 +124,8 @@ function yourspace_customizer( $wp_customize ) {
             'label'     => __( 'Default Profile Image', 'yourspace' ),
             'section'   => 'yourspace_profile',
             'settings'  => 'profile_photo',
-            'description'   => __( 'The default profile image.' ),
             'width'     => 150,
-            'height'    => 300
+            'height'    => 250
             ) 
     ) );
     
