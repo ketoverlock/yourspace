@@ -156,11 +156,18 @@
 
 .comment-meta {
     flex: 0 0 150px;
+    padding: 5px;
     background: $orange-dark;
     border-right: 2px solid $white;
+    
+    .says {
+        display: none;
+    }
 }
 
 .comment-content {
+    flex: 1 1;
+    padding: 5px;
     background: $orange-light;
 }
 
