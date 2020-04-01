@@ -104,6 +104,14 @@
             list-style-type: disc;
         }
     }
+
+    ol {
+        margin: 0 0 10px 10px;
+        
+        li {
+            list-style-type: decimal;
+        }
+    }
     
 }
 
