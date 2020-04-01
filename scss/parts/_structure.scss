@@ -217,6 +217,21 @@
     padding: 10px;
 }
 
+.comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    p {
+        width: 100%;
+    }
+}
+
+.comment-form-author,
+.comment-form-email {
+    width: calc(50% - 5px;)
+}
+
 .profile-info {
     margin-bottom: 20px;
 }
