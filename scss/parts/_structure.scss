@@ -151,12 +151,13 @@
     
     .reply {
         width: 100%;
+        margin-top: -10px;
     }
 }
 
 .comment-meta {
     flex: 0 0 150px;
-    padding: 5px;
+    padding: 5px 5px 20px 5px;
     background: $orange-mid;
     border-right: 2px solid $white;
     
