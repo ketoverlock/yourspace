@@ -18,15 +18,19 @@ get_header();
         </div>
         <?php endif; ?>
         
-        <?php if (is_active_sidebar('blurbs')): ?>
-        <div class="blurbs">
-            <?php if (get_theme_mod('blurbs_title')) : ?>
-                <h2 class="blurbs-title"><?php echo esc_attr(get_theme_mod('blurbs_title')); ?></h2>
-            <?php endif; ?>
-            <div class="blurbs-content">
-                <?php dynamic_sidebar('blurbs'); ?>
+        <?php if (get_option('show_on_front') == 'posts') : ?>
+        
+            <?php if (is_active_sidebar('blurbs')): ?>
+            <div class="blurbs">
+                <?php if (get_theme_mod('blurbs_title')) : ?>
+                    <h2 class="blurbs-title"><?php echo esc_attr(get_theme_mod('blurbs_title')); ?></h2>
+                <?php endif; ?>
+                <div class="blurbs-content">
+                    <?php dynamic_sidebar('blurbs'); ?>
+                </div>
             </div>
-        </div>
+            <?php endif; ?>
+        
         <?php endif; ?>
         
 		<main id="main" class="site-main">
