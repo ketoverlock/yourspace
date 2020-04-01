@@ -73,6 +73,10 @@
             margin-bottom: 10px;
         }
         
+        li + li {
+            margin-top: 10px;
+        }
+        
         a {
             color: $black;
         }
