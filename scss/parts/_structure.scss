@@ -65,6 +65,14 @@
         padding: 2px;
         margin: -2px -2px 2px;
     }
+    
+    li {
+        background: $blue-light;
+    }
+    
+    li + li {
+        margin-top: 2px;
+    }
 }
 
 /* Footer
