@@ -49,16 +49,17 @@
 }
 
 .extended-network {
+    margin-bottom: 20px;
     
-    .widget {
+    .widget_text {
         border: 1px solid $black;
         text-align: center;
         padding: 25px;
-    }
-    
-    .widget-title {
-        font-size: 14px;
-        font-size: 1.4rem;
+        
+        .widget-title {
+            font-size: 14px;
+            font-size: 1.4rem;
+        }
     }
     
 }
