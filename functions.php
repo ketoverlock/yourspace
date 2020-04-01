@@ -59,7 +59,7 @@ add_action( 'after_setup_theme', 'yourspace_setup' );
 
 // Content Width
 function yourspace_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'yourspace_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'yourspace_content_width', 540 );
 }
 add_action( 'after_setup_theme', 'yourspace_content_width', 0 );
 
