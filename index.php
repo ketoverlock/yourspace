@@ -16,11 +16,6 @@ get_header();
 ?>
 
 	<div id="primary" class="content">
-        <?php if (get_theme_mod('network_display')) : ?>
-        <div class="extended-network">
-            <span class="extended-network-title"><?php echo esc_attr(get_theme_mod('network_title')); ?></span>
-        </div>
-        <?php endif; ?>
         
 		<main id="main" class="site-main">
 

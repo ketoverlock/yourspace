@@ -171,42 +171,6 @@ function yourspace_customizer( $wp_customize ) {
     
     /****************************************************************
 
-        Extended Network
-
-    ****************************************************************/
-    
-    // Add Profile
-    $wp_customize->add_section('yourspace_network', array(
-        'title'         => __( 'Extended Network', 'yourspace' ),
-        'description'   => __( 'Customize the extended network section.', 'yourspace' ),
-        'priority'      => 110,
-    ));
-    
-    // Profile Checkbox
-    $wp_customize->add_setting( 'network_display', array(
-        'default'   => 1
-    ));
-    $wp_customize->add_control( 'network_display', array(
-        'type'          => 'checkbox',
-        'section'       => 'yourspace_network',
-        'label'         => __( 'Display Extended Network?', 'yourspace' ),
-        'description'   => __( 'Uncheck to remove extended network section.' ),
-    ) );
-    
-    // Profile Title
-    $wp_customize->add_setting( 'network_title', array(
-        'default'               => 'YourSpace is in your extended network.',
-        'sanitize_callback'     => 'sanitize_text_field',
-    ) );
-    $wp_customize->add_control( 'network_title', array(
-        'type'          => 'text',
-        'label'         => __( 'Extended Network Title', 'yourspace' ),
-        'section'       => 'yourspace_network',
-        'settings'      => 'network_title',
-    ) );
-    
-    /****************************************************************
-
         Tag Manager / Code Inputs
 
     ****************************************************************/
