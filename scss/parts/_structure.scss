@@ -48,6 +48,15 @@
     padding: 20px 10px;
 }
 
+.entry-title {
+    background: $orange-light;
+    padding: 2px 10px;
+    
+    a {
+        color: $orange-dark;
+    }
+}
+
 .sidebar {
     font-size: 11px;
     font-size: 1.1rem;
