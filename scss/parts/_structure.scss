@@ -48,6 +48,14 @@
     padding: 20px 10px;
 }
 
+.blog,
+.archive {
+    
+    .hentry + .hentry {
+        margin-top: 20px;
+    }
+}
+
 .entry-title,
 .page-title {
     background: $orange-light;
@@ -91,9 +99,18 @@
     
     ul {
         margin: 0 0 10px 10px;
-        list-style: disc;
+        
+        li {
+            list-style-type: disc;
+        }
     }
     
+}
+
+.entry-footer {
+    padding: 0 10px;
+    font-size: 11px;
+    font-size: 1.1rem;
 }
 
 .sidebar {
