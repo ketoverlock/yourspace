@@ -32,15 +32,7 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+		if ( have_posts() && get_option('show_on_front') == 'posts' ) :
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -56,6 +48,10 @@ get_header();
 			endwhile;
 
 			the_posts_navigation();
+            
+        elseif (get_option('show_on_front') == 'page') :
+            
+            get_template_part( 'template-parts/content', 'page' );
 
 		else :
 
