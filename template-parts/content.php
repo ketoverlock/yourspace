@@ -29,10 +29,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php yourspace_post_thumbnail(); ?>
-
 	<div class="entry-content">
-		<?php
+        <?php yourspace_post_thumbnail(); 
+        
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */

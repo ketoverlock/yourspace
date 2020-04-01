@@ -14,10 +14,9 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php yourspace_post_thumbnail(); ?>
-
 	<div class="entry-content">
-		<?php
+        <?php yourspace_post_thumbnail(); 
+        
 		the_content();
 
 		wp_link_pages( array(
