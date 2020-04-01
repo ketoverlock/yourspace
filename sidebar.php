@@ -20,7 +20,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
         
         <div class="profile-content">
             
-            <?php get_theme_mod('profile_image'); ?>
+            <?php echo get_theme_mod('profile_image'); ?>
             
         </div>
         
