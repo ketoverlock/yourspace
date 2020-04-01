@@ -222,13 +222,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
+    input {
+        display: block;
+    }
+    
+    label {
+        display: inline;
+    }
+    
+    input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
     p {
         width: 100%;
+        margin: 0 0 10px 0;
     }
 }
 
-.comment-form-author,
-.comment-form-email {
+p.comment-form-author,
+p.comment-form-email {
     width: calc(50% - 5px;)
 }
 
