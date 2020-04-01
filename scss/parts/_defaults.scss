@@ -255,8 +255,8 @@ textarea,
 .woocommerce-checkout table.cart td.actions .coupon .input-text {
     display: block;
     width: 100%;
-    background: darken($white, 3%);
-    border: 2px solid darken($white, 3%);
+    background: $white;
+    border: 1px solid $blue-mid;
     padding: 10px !important;
     transition: all .3s ease-in-out;
     border-radius: 0 !important;
