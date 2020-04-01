@@ -67,6 +67,17 @@
         }
     }
     
+    .widget_recent_entries {
+        
+        .widget-title {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: $black;
+        }
+    }
+    
 }
 
 .blog,
