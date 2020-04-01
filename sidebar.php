@@ -26,7 +26,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
             
             <?php if (get_theme_mod('profile_text')): ?>
             <div class="profile-text">
-                <?php echo esc_html(get_theme_mod('profile_text')); ?>
+                <?php echo wpautop(esc_html(get_theme_mod('profile_text'))); ?>
             </div>
             <?php endif; ?>
             
