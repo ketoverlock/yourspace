@@ -57,7 +57,8 @@
 }
 
 .entry-title,
-.page-title {
+.page-title,
+.comments-title {
     background: $orange-light;
     padding: 2px 10px;
     color: $orange-dark;
@@ -138,10 +139,6 @@
     padding: 0 10px;
     font-size: 11px;
     font-size: 1.1rem;
-}
-
-.comments-area {
-    padding: 0 10px;
 }
 
 .profile-info {
