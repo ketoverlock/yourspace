@@ -63,6 +63,8 @@
 .comment-reply-title,
 .woocommerce-tabs h2,
 .related > h2 {
+    font-size: 14px;
+    font-size: 1.4rem;
     background: $orange-light;
     padding: 2px 10px;
     color: $orange-dark;
@@ -101,7 +103,8 @@
     margin-bottom: 10px;
 }
 
-.entry-content {
+.entry-content,
+.blurbs-content {
     padding: 10px;
     
     h1,

@@ -26,9 +26,11 @@ get_header();
         <?php if (is_active_sidebar('blurbs')): ?>
         <div class="blurbs">
             <?php if (get_theme_mod('blurbs_title')) : ?>
-            <h2 class="blurbs-title"><?php echo esc_attr(get_theme_mod('blurbs_title')); ?></h2>
+                <h2 class="blurbs-title"><?php echo esc_attr(get_theme_mod('blurbs_title')); ?></h2>
             <?php endif; ?>
-            <?php dynamic_sidebar('blurbs'); ?>
+            <div class="blurbs-content">
+                <?php dynamic_sidebar('blurbs'); ?>
+            </div>
         </div>
         <?php endif; ?>
         
