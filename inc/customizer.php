@@ -88,16 +88,16 @@ function yourspace_customizer( $wp_customize ) {
     
     // Add Profile
     $wp_customize->add_section('yourspace_profile', array(
-        'title'         => __( 'Blueprint Profile', 'yourspace' ),
+        'title'         => __( 'Profile Info', 'yourspace' ),
         'description'   => __( 'Customize the hero section.', 'yourspace' ),
         'priority'      => 110,
     ));
     
     // Profile Checkbox
-    $wp_customize->add_setting( 'default_display', array(
+    $wp_customize->add_setting( 'profile_display', array(
         'default'   => 1
     ));
-    $wp_customize->add_control( 'default_display', array(
+    $wp_customize->add_control( 'profile_display', array(
         'type'          => 'checkbox',
         'section'       => 'yourspace_profile',
         'label'         => __( 'Display Profile Info?', 'yourspace' ),
@@ -105,26 +105,25 @@ function yourspace_customizer( $wp_customize ) {
     ) );
     
     // Default Profile Title
-    $wp_customize->add_setting( 'default_title', array(
+    $wp_customize->add_setting( 'profile_title', array(
         'default'               => get_bloginfo('title'),
         'sanitize_callback'     => 'sanitize_text_field',
     ) );
-    $wp_customize->add_control( 'default_title', array(
+    $wp_customize->add_control( 'profile_title', array(
         'type'          => 'text',
         'label'         => __( 'Default Profile Title', 'yourspace' ),
         'section'       => 'yourspace_profile',
-        'settings'      => 'default_title',
-        'description'   => __( 'Default profile title.' ),
+        'settings'      => 'profile_title',
     ) );
 
 
     // Profile Image
-    $wp_customize->add_setting('default_photo');
-    $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'default_photo',
+    $wp_customize->add_setting('profile_photo');
+    $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'profile_photo',
         array(
             'label'     => __( 'Default Profile Image', 'yourspace' ),
             'section'   => 'yourspace_profile',
-            'settings'  => 'default_photo',
+            'settings'  => 'profile_photo',
             'description'   => __( 'The default profile image.' ),
             'width'     => 150,
             'height'    => 300
