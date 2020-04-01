@@ -48,7 +48,23 @@
     padding: 20px 10px;
 }
 
-
+.sidebar {
+    
+    .widget {
+        border: 1px solid $blue-mid;
+        padding: 2px;
+    }
+    
+    .widget + .widget {
+        margin-top: 20px;
+    }
+    
+    .widget-title {
+        color: $blue-dark;
+        background: $blue-mid;
+        margin: -2px -2px 2px;
+    }
+}
 
 /* Footer
 --------------------------------------------- */
