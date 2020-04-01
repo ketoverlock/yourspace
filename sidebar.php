@@ -20,7 +20,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
         
         <div class="profile-content">
             
-            <?php wp_get_attachment_image(get_theme_mod('profile_photo')); ?>
+            <?php echo wp_get_attachment_image(get_theme_mod('profile_photo')); ?>
             
         </div>
         
