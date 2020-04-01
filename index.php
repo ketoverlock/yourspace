@@ -17,6 +17,14 @@ get_header();
 
 	<div id="primary" class="content">
         
+        <div class="extended-network">
+            <?php dynamic_sidebar('extended-network'); ?>
+        </div>
+        
+        <div class="blurbs">
+            <?php dynamic_sidebar('blurbs'); ?>
+        </div>
+        
 		<main id="main" class="site-main">
 
 		<?php
