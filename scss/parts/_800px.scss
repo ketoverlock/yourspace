@@ -80,4 +80,21 @@
         
     }
     
+    /* Body
+    --------------------------------------------- */
+    
+    .site-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .content {
+        width: 540px;
+    }
+    
+    .sidebar {
+        width: 300px;
+    }
+    
 }

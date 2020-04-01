@@ -347,16 +347,16 @@ input[type="submit"].small {
 	padding: 8px 16px;
 }
 
-.site-container button:disabled,
-.site-container button:disabled:hover,
-.site-container input:disabled,
-.site-container input:disabled:hover,
-.site-container input[type="button"]:disabled,
-.site-container input[type="button"]:disabled:hover,
-.site-container input[type="reset"]:disabled,
-.site-container input[type="reset"]:disabled:hover,
-.site-container input[type="submit"]:disabled,
-.site-container input[type="submit"]:disabled:hover {
+.site button:disabled,
+.site button:disabled:hover,
+.site input:disabled,
+.site input:disabled:hover,
+.site input[type="button"]:disabled,
+.site input[type="button"]:disabled:hover,
+.site input[type="reset"]:disabled,
+.site input[type="reset"]:disabled:hover,
+.site input[type="submit"]:disabled,
+.site input[type="submit"]:disabled:hover {
 	cursor: not-allowed;
 }
 
@@ -546,8 +546,6 @@ img.alignnone,
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-content:before,
-.site-content:after,
 .site-footer:before,
 .site-footer:after {
 	content: "";
@@ -558,7 +556,6 @@ img.alignnone,
 .clear:after,
 .entry-content:after,
 .comment-content:after,
-.site-content:after,
 .site-footer:after {
 	clear: both;
 }
