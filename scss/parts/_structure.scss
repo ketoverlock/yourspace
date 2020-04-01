@@ -70,8 +70,17 @@
     }
     
     li {
+        display: flex;
         background: $blue-light;
         padding: 2px;
+    }
+    
+    li > strong {
+        display: block;
+        width: 100px;
+        background: $blue-mid-alt;
+        color: $blue;
+        border-right: 2px solid $white;
     }
     
     li + li {
