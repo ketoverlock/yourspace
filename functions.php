@@ -145,6 +145,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 ****************************************************************/
 
 if ( class_exists( 'WooCommerce' ) ) {
+    
+    // Add Woo Support
+    function yourspace_woocommerce_setup() {
+        add_theme_support( 'woocommerce' );
+        add_theme_support( 'wc-product-gallery-zoom' );
+        add_theme_support( 'wc-product-gallery-lightbox' );
+        add_theme_support( 'wc-product-gallery-slider' );
+    } add_action( 'after_setup_theme', 'yourspace_woocommerce_setup' );
+    
+    // Products per page
+    function yourspace_woocommerce_products_per_page() {
+        return 9;
+    }
+    add_filter( 'loop_shop_per_page', 'yourspace_woocommerce_products_per_page' );
+    
+    // Columns on Product Archives
+    function yourspace_woocommerce_loop_columns() {
+        return 3;
+    }
+    add_filter( 'loop_shop_columns', 'yourspace_woocommerce_loop_columns' );
+    
 }
 
 /****************************************************************
