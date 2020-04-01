@@ -104,7 +104,7 @@ function yourspace_customizer( $wp_customize ) {
         'description'   => __( 'Uncheck to remove profile section.' ),
     ) );
     
-    // Default Profile Title
+    // Profile Title
     $wp_customize->add_setting( 'profile_title', array(
         'default'               => get_bloginfo('title'),
         'sanitize_callback'     => 'sanitize_text_field',
@@ -125,9 +125,11 @@ function yourspace_customizer( $wp_customize ) {
             'section'   => 'yourspace_profile',
             'settings'  => 'profile_photo',
             'width'     => 150,
-            'height'    => 250
+            'height'    => 200
             ) 
     ) );
+    
+    
     
     
     /****************************************************************
