@@ -87,6 +87,16 @@ function yourspace_customizer( $wp_customize ) {
         ) ) 
     );
     
+    // Medium Orange
+    $wp_customize->add_setting('orange_mid', array('default' => '#F3983E'));
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'orange_mid', 
+        array(
+            'label'     => __( 'Dark Orange 2', 'yourspace' ),
+            'section'   => 'colors',
+            'settings'  => 'orange_mid',
+        ) ) 
+    );
+    
     // Light Orange
     $wp_customize->add_setting('orange_light', array('default' => '#ffcc95'));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'orange_light', 

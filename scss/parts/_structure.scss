@@ -157,12 +157,19 @@
 .comment-meta {
     flex: 0 0 150px;
     padding: 5px;
-    background: $orange-dark;
+    background: $orange-mid;
     border-right: 2px solid $white;
     
     .says {
         display: none;
     }
+}
+
+.comment-author.vcard {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
 }
 
 .comment-content {
