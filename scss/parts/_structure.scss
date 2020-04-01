@@ -49,7 +49,12 @@
 }
 
 .extended-network {
+    padding: 0 10px;
     margin-bottom: 20px;
+    
+    .widget + .widget {
+        margin-top: 20px;
+    }
     
     .widget_text {
         border: 1px solid $black;
