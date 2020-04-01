@@ -141,6 +141,29 @@
     font-size: 1.1rem;
 }
 
+.comment-list {
+    padding: 10px;
+}
+
+.comment-body {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .reply {
+        width: 100%;
+    }
+}
+
+.comment-meta {
+    flex: 0 0 150px;
+    background: $orange-dark;
+    border-right: 2px solid $white;
+}
+
+.comment-content {
+    background: $orange-light;
+}
+
 .profile-info {
     margin-bottom: 20px;
 }
