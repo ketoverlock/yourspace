@@ -73,6 +73,19 @@
     padding: 0 10px;
 }
 
+.entry-meta,
+.entry-footer {
+    
+    span {
+        display: inline-block;
+    }
+    
+    span + span {
+        margin-left: 10px;
+    }
+    
+}
+
 .post-thumbnail {
     display: block;
     margin-bottom: 10px;
