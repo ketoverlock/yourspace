@@ -96,7 +96,7 @@ if ( ! function_exists( 'yourspace_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( '<i class="fas fa-edit" aria-hidden="true"></i> Edit <span class="screen-reader-text">%s</span>', 'yourspace' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'yourspace' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -105,7 +105,7 @@ if ( ! function_exists( 'yourspace_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">',
+			'<span class="edit-link"><i class="fas fa-edit" aria-hidden="true"></i> ',
 			'</span>'
 		);
 	}
