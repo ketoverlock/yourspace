@@ -106,22 +106,11 @@ mark {
 }
 
 blockquote {
-	padding: 30px;
-    margin: 30px 0;
-    background: $grey-alt;
-
-    &:before {
-        content: "\201C";
-        display: block;
-        font-size: 30px;
-        font-size: 3rem;
-        height: 0;
-        left: -20px;
-        position: relative;
-        top: -10px;
-    }
+	padding: 10px;
+    margin: 10px 0;
+    background: $blue-light;
     
-    p {
+    p:last-of-type {
         margin-bottom: 0;
     }
 }
@@ -475,7 +464,7 @@ th:first-child {
 .alignwide {
     display: block;
 	text-align: center;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
 }
 
 a.aligncenter img {
@@ -496,12 +485,12 @@ a.alignright {
 img.centered,
 .aligncenter {
 	display: block;
-	margin: 0 auto 30px;
+	margin: 0 auto 10px;
 }
 
 img.alignnone,
 .alignnone {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .alignfull {
