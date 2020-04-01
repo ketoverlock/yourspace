@@ -58,7 +58,10 @@
 
 .entry-title,
 .page-title,
-.comments-title {
+.comments-title,
+.comment-reply-title,
+.woocommerce-tabs h2,
+.related > h2 {
     background: $orange-light;
     padding: 2px 10px;
     color: $orange-dark;
