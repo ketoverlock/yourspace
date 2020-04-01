@@ -26,11 +26,11 @@ if ( ! function_exists( 'yourspace_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'yourspace' ),
+			esc_html_x( '%s', 'post date', 'yourspace' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+		echo '<span class="posted-on"><i class="far fa-calendar-alt" aria-hidden="true"></i> ' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -42,11 +42,11 @@ if ( ! function_exists( 'yourspace_posted_by' ) ) :
 	function yourspace_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'yourspace' ),
+			esc_html_x( '%s', 'post author', 'yourspace' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+		echo '<span class="byline"><i class="fas fa-user" aria-hidden="true"></i> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -62,14 +62,14 @@ if ( ! function_exists( 'yourspace_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'yourspace' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'yourspace' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links"><i class="fas fa-folder-open" aria-hidden="true"></i>' . esc_html__( 'Posted in %1$s', 'yourspace' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'yourspace' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'yourspace' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links"><i class="fas fa-tags" aria-hidden="true"></i>' . esc_html__( 'Tagged %1$s', 'yourspace' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -79,7 +79,7 @@ if ( ! function_exists( 'yourspace_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yourspace' ),
+						__( '<i class="fas fa-comment-alt" aria-hidden="true"></i> Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yourspace' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -96,7 +96,7 @@ if ( ! function_exists( 'yourspace_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'yourspace' ),
+					__( '<i class="fas fa-edit" aria-hidden="true"></i> Edit <span class="screen-reader-text">%s</span>', 'yourspace' ),
 					array(
 						'span' => array(
 							'class' => array(),
