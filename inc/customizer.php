@@ -171,6 +171,31 @@ function yourspace_customizer( $wp_customize ) {
     
     /****************************************************************
 
+        Extended Network / Blurbs
+
+    ****************************************************************/
+    
+    // Add Blurbs Section
+    $wp_customize->add_section('yourspace_blurbs', array(
+        'title'         => __( 'Blurbs', 'yourspace' ),
+        'description'   => __( 'Customize the blurbs section.', 'yourspace' ),
+        'priority'      => 110,
+    ));
+    
+    // Blurbs Title
+    $wp_customize->add_setting( 'blurbs_title', array(
+        'default'               => 'YourSpace\'s Blurbs',
+        'sanitize_callback'     => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'blurbs_title', array(
+        'type'          => 'text',
+        'label'         => __( 'Blurbs Title', 'yourspace' ),
+        'section'       => 'yourspace_blurbs',
+        'settings'      => 'blurbs_title',
+    ) );
+    
+    /****************************************************************
+
         Tag Manager / Code Inputs
 
     ****************************************************************/

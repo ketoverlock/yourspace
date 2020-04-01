@@ -17,13 +17,20 @@ get_header();
 
 	<div id="primary" class="content">
         
+        <?php if (is_active_sidebar('extended-network')): ?>
         <div class="extended-network">
             <?php dynamic_sidebar('extended-network'); ?>
         </div>
+        <?php endif; ?>
         
+        <?php if (is_active_sidebar('blurbs')): ?>
         <div class="blurbs">
+            <?php if (get_theme_mod('blurbs_title')) : ?>
+            <h2 class="blurbs-title"><?php echo esc_attr(get_theme_mod('blurbs_title')); ?></h2>
+            <?php endif; ?>
             <?php dynamic_sidebar('blurbs'); ?>
         </div>
+        <?php endif; ?>
         
 		<main id="main" class="site-main">
 
