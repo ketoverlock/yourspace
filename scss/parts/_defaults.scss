@@ -334,11 +334,14 @@ input[type="search"]::-webkit-search-results-button {
 .search-form {
     position: relative;
     display: flex;
-    align-items: center;
     
     .search-form-input {
         flex: 1 0 75%;
-        border-right: 0;
+    }
+    
+    .search-submit {
+        font-size: 12px;
+        margin-left: 5px;
     }
 }
 
