@@ -308,15 +308,15 @@ p.comment-form-email {
     text-align: center;
 }
 
-.pagination a {
+.pagination a,
+.pagination span {
     display: inline-block;
     margin: 0 5px;
     font-weight: 700;
 }
 
 .pagination .current {
-    font-weight: 700;
-    color: $orange-dark;
+    color: $orange-light;
 }
 
 .profile-info {
