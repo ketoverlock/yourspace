@@ -43,10 +43,8 @@
             the_content();
         endif;
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yourspace' ),
-			'after'  => '</div>',
-		) );
+		the_posts_pagination();
+        
 		?>
 	</div><!-- .entry-content -->
 
