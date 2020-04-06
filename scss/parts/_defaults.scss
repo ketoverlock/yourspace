@@ -342,9 +342,9 @@ input[type="search"]::-webkit-search-results-button {
     }
     
     .search-submit {
-        font-size: 10px;
+        font-size: 11px;
         font-size: 1.1rem;
-        line-height: 1;
+        line-height: 1 !important;
         margin-left: 5px;
         padding: 5px 10px !important;
     }
