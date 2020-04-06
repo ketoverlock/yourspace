@@ -36,15 +36,17 @@
         
             the_excerpt(); ?>
         
-            <a href="<?php the_permalink(); ?>" class="more-link"><?php _e('Read More', 'yourspace'); ?></a>
+            <a href="<?php the_permalink(); ?>" class="more-link"><?php __e('Read More', 'yourspace'); ?></a>
         
         <?php else:
         
             the_content();
         endif;
 
-		the_posts_pagination();
-        
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yourspace' ),
+			'after'  => '</div>',
+		) );
 		?>
 	</div><!-- .entry-content -->
 
