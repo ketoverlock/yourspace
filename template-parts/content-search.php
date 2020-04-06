@@ -26,7 +26,11 @@
 	<?php yourspace_post_thumbnail(); ?>
 
 	<div class="entry-summary">
+        
 		<?php the_excerpt(); ?>
+        
+        <a href="<?php the_permalink(); ?>" class="more-link"><?php _e('Read More', 'yourspace'); ?></a>
+        
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
