@@ -36,7 +36,7 @@
         
             the_excerpt(); ?>
         
-            <a href="<?php the_permalink(); ?>" class="more-link"><?php __e('Read More', 'yourspace'); ?></a>
+            <a href="<?php the_permalink(); ?>" class="more-link"><?php _e('Read More', 'yourspace'); ?></a>
         
         <?php else:
         
