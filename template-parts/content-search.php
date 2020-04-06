@@ -23,9 +23,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php yourspace_post_thumbnail(); ?>
-
 	<div class="entry-summary">
+        
+        <?php yourspace_post_thumbnail(); ?>
         
 		<?php the_excerpt(); ?>
         
