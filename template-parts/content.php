@@ -34,9 +34,11 @@
         
 		if (!is_singular()) :
         
-            the_excerpt();
+            the_excerpt(); ?>
         
-        else:
+            <a href="<?php the_permalink(); ?>" class="more-link"><?php _e('Read More', 'yourspace'); ?></a>
+        
+        <?php else:
         
             the_content();
         

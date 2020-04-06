@@ -176,19 +176,6 @@ function yourspace_pingback_header() {
 }
 add_action( 'wp_head', 'yourspace_pingback_header' );
 
-// Filter More Links
-function yourspace_excerpt_more( $more ) {
-    if ( ! is_single() ) {
-        $more = sprintf( '<a class="more-link" href="%1$s">%2$s</a>',
-            get_permalink( get_the_ID() ),
-            __( 'Read More', 'yourspace' )
-        );
-    }
- 
-    return $more;
-}
-add_filter( 'excerpt_more', 'yourspace_excerpt_more' );
-
 // Filter Archive Titles
 function yourspace_archive_title( $title ) {
     
