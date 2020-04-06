@@ -36,6 +36,7 @@ if ( ! function_exists( 'yourspace_setup' ) ) :
 		register_nav_menus( array(
 			'primary-menu' => esc_html__( 'Primary Menu', 'yourspace' ),
             'mobile-menu' => esc_html__( 'Mobile Menu', 'yourspace' ),
+            'footer-menu' => esc_html__( 'Footer Menu', 'yourspace' )
 		) );
 
 		// HTML 5 Output
