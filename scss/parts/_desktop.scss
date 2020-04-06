@@ -111,4 +111,42 @@
         padding: 0;
     }
     
+    /* Footer
+    --------------------------------------------- */
+    
+    .footer-navigation {
+        display: block;
+        font-size: 11px;
+        font-size: 1.1rem;
+        display: block;
+        width: 100%;
+        
+        .menu {
+            list-style: none;
+            text-align: center;
+            
+            & > li {
+                display: inline-block;
+                margin-left: -4px;
+                position: relative;
+            }
+            
+            & > li + li:before {
+                content: '|';
+                display: inline-block;
+                margin-left: -4px;
+                padding: 0 5px;
+                
+            }
+            
+            a {
+                display: inline-block;
+                margin-left: -4px;
+                padding: 0 5px 10px;
+                text-decoration: underline;
+            }
+            
+        }
+    }
+    
 }
