@@ -32,15 +32,14 @@
 	<div class="entry-content">
         <?php yourspace_post_thumbnail(); 
         
-		if (is_home() || is_archive()) :
+		if (!is_singular()) :
         
-            the_excerpt(); ?>
+            the_excerpt();
         
-            <a href="<?php the_permalink(); ?>" class="more-link"><?php _e('Read More', 'yourspace'); ?></a>
-        
-        <?php else:
+        else:
         
             the_content();
+        
         endif;
 
 		wp_link_pages( array(
