@@ -299,6 +299,11 @@ p.comment-form-email {
     font-weight: 700;
 }
 
+.pagination .current {
+    font-weight: 700;
+    color: $orange-dark;
+}
+
 .profile-info {
     margin-bottom: 20px;
 }
