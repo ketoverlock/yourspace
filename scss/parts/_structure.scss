@@ -288,6 +288,17 @@ p.comment-form-email {
     width: calc(50% - 5px;)
 }
 
+.pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: 700;
+}
+
 .profile-info {
     margin-bottom: 20px;
 }
