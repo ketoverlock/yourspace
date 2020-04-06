@@ -335,12 +335,15 @@ input[type="search"]::-webkit-search-results-button {
     position: relative;
     display: flex;
     
-    .search-form-input {
-        flex: 1 0 75%;
+    .search-field {
+        flex: 1 1 75%;
+        padding: 5px;
     }
     
     .search-submit {
-        font-size: 12px;
+        font-size: 11px;
+        font-size: 1.1rem;
+        line-height: 1;
         margin-left: 5px;
     }
 }
