@@ -39,6 +39,12 @@
 			endif; ?>
 		</div><!-- .site-branding -->
         
+        <?php if (is_active_sidebar('header-widget')): ?>
+        <div class="header-widget">
+            <?php dynamic_sidebar('header-widget'); ?>
+        </div>
+        <?php endif; ?>
+        
         <button class="menu-toggle"><span class="screen-reader-text"><?php esc_html_e( 'Show Mobile Menu', 'yourspace' ); ?></span> <i class="fas fa-bars" aria-hidden="true"></i></button>
 
 		<nav id="site-navigation" class="primary-navigation">

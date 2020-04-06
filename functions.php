@@ -90,6 +90,15 @@ add_action( 'wp_enqueue_scripts', 'yourspace_scripts' );
 ****************************************************************/
 
 function yourspace_widgets_init() {
+    register_sidebar( array(
+		'name'          => esc_html__( 'Header Widget', 'yourspace' ),
+		'id'            => 'header-widget',
+		'description'   => esc_html__( 'Header widget for search bar.', 'yourspace' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'yourspace' ),
 		'id'            => 'sidebar-1',
