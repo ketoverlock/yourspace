@@ -188,10 +188,6 @@
         }
     }
     
-    p:last-of-type {
-        margin-bottom: 0;
-    }
-    
 }
 
 .entry-footer {
@@ -355,6 +351,10 @@ p.comment-form-email {
 
 .profile-info {
     margin-bottom: 20px;
+}
+
+.profile-photo {
+    max-width: 150px;
 }
 
 .profile-title {
