@@ -53,6 +53,9 @@ if ( ! function_exists( 'yourspace_setup' ) ) :
 			'default-color' => 'E5E5E5',
 			'default-image' => '',
 		) ) );
+		
+		// Disable block widgets
+		remove_theme_support( 'widgets-block-editor' );
         
 	}
 endif;
