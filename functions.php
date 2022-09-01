@@ -155,6 +155,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 ****************************************************************/
 
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/output.php';
 
 /****************************************************************
 

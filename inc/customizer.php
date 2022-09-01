@@ -151,6 +151,8 @@ function yourspace_customizer( $wp_customize ) {
             'label'     => __( 'Profile Image', 'yourspace' ),
             'section'   => 'yourspace_profile',
             'settings'  => 'profile_photo',
+            'flex_width'  => true,
+            'flex_height' => true,
             'width'     => 150,
             'height'    => 200
             ) 

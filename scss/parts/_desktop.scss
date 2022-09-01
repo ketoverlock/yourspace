@@ -100,6 +100,7 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding: 20px 10px;
     }
     
     .content {
@@ -109,6 +110,16 @@
     .sidebar {
         width: 300px;
         padding: 0;
+    }
+    
+    .comment-meta {
+        max-width: unset;
+    }
+    
+    .comment-author.vcard, 
+    .comment-metadata {
+        font-size: 11px;
+        font-size: 1.1rem;
     }
     
     /* Footer

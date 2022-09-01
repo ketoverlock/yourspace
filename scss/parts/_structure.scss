@@ -51,7 +51,7 @@
 
 .site-content {
     background: $white;
-    padding: 20px 10px;
+    padding: 20px 0;
 }
 
 .extended-network {
@@ -125,7 +125,7 @@
 .entry-meta {
     font-size: 11px;
     font-size: 1.1rem;
-    padding: 5px 10px 0;
+    padding: 5px 0 0;
 }
 
 .entry-meta,
@@ -135,12 +135,9 @@
         font-weight: 700;
     }
     
-    span {
+    & > span {
         display: inline-block;
-    }
-    
-    span + span {
-        margin-left: 10px;
+        margin: 0 10px;
     }
     
     i {
@@ -197,11 +194,38 @@
     
 }
 
-.entry-footer,
+.entry-footer {
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+
 .post-navigation {
     padding: 0 10px;
     font-size: 11px;
     font-size: 1.1rem;
+}
+
+.single .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-previous > a:before {
+    content: '❮';
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.nav-next {
+    text-align: right;
+}
+
+.nav-next > a:after {
+    content: '❯';
+    display: inline-block;
+    margin: 0 0 0 5px;
 }
 
 .comment-list {
@@ -229,6 +253,7 @@
 
 .comment-meta {
     flex: 0 0 150px;
+    max-width: 25%;
     padding: 5px 5px 20px 5px;
     background: $orange-mid;
     border-right: 2px solid $white;
@@ -248,6 +273,8 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    font-size: 10px;
+    font-size: 1rem;
     
     img {
         margin: 10px auto;
@@ -255,8 +282,8 @@
 }
 
 .comment-metadata {
-    font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 10px;
+    font-size: 1rem;
     font-weight: 700;
     
     a,
