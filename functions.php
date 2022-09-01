@@ -14,7 +14,7 @@
     
 ****************************************************************/
 
-define( 'THEME_VERSION', '1.0.0' );
+define( 'THEME_VERSION', '1.0.1' );
 
 if ( ! function_exists( 'yourspace_setup' ) ) :
 

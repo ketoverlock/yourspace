@@ -8,16 +8,19 @@ jQuery(function($) {
         $('.menu-toggle').click(function() {
             $('.site').addClass('fixed');
             $('.mobile-navigation').addClass('mobile-navigation--visible');
+            $('.menu-close').focus();
         });
         
         $('.menu-close').click(function() {
             $('.site').removeClass('fixed');
             $('.mobile-navigation').removeClass('mobile-navigation--visible');
+            $('.menu-toggle').focus();
         });
         
         $(document).on('click', '.submenu-toggle', function() {
             $(this).siblings('.sub-menu').slideToggle();
             $(this).toggleClass('rotated');
+            $(this).siblings('.sub-menu').find('li:first-of-type > a').focus();
         });
         
     }
