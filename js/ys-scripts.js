@@ -27,10 +27,11 @@ jQuery(function($) {
     
     function windowFix() {
 
-        if ($(window).width() < 1024 && $('.mobile-navigation').hasClass('mobile-navigation--visible')) {
+        if ($(window).width() < 768 && $('.mobile-navigation').hasClass('mobile-navigation--visible')) {
             $('.site').addClass('fixed');
         } else {
             $('.site').removeClass('fixed');
+            $('.mobile-navigation').removeClass('mobile-navigation--visible');
         }
         
     }

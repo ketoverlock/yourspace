@@ -103,15 +103,6 @@ function yourspace_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'yourspace' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add sidebar widgets / lists here.', 'yourspace' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
     register_sidebar( array(
 		'name'          => esc_html__( 'Extended Network', 'yourspace' ),
 		'id'            => 'extended-network',
@@ -125,6 +116,15 @@ function yourspace_widgets_init() {
 		'name'          => esc_html__( 'Blurbs', 'yourspace' ),
 		'id'            => 'blurbs',
 		'description'   => esc_html__( 'Add your blurbs widgets here.', 'yourspace' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'yourspace' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add sidebar widgets / lists here.', 'yourspace' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
