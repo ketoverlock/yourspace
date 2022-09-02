@@ -26,7 +26,7 @@ function ys_customize_css() {
         
         <?php if ($blue_mid) : ?>
         
-        .sidebar .widget-title, .primary-navigation, .primary-navigation .menu .sub-menu, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link, .mobile-navigation { background-color: <?php echo $blue_mid; ?>; } .sidebar .widget, input, select, textarea, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link { border-color: <?php echo $blue_mid; ?>; }
+        .sidebar .widget-title, .wp-calendar-table caption, .primary-navigation, .primary-navigation .menu .sub-menu, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link, .mobile-navigation { background-color: <?php echo $blue_mid; ?>; } .sidebar .widget, input, select, textarea, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link { border-color: <?php echo $blue_mid; ?>; }
         
         <?php endif; ?>
         

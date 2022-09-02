@@ -90,6 +90,10 @@
     
 }
 
+.page-header {
+    margin-bottom: 10px;
+}
+
 .blurbs-content {
     
     .widget + .widget {
@@ -153,7 +157,8 @@
 }
 
 .entry-content,
-.blurbs-content {
+.blurbs-content,
+.archive-description {
     padding: 10px;
     
     h1,
@@ -391,7 +396,8 @@ p.comment-form-email {
         margin-top: 20px;
     }
     
-    .widget-title {
+    .widget-title,
+    .wp-calendar-table caption {
         color: $white;
         background: $blue-mid;
         padding: 2px;
@@ -404,7 +410,9 @@ p.comment-form-email {
         padding: 2px;
     }
     
-    li > strong {
+    li > strong,
+    li > .comment-author-link {
+        font-weight: 700;
         display: block;
         flex: 0 0 100px;
         padding: 2px;
@@ -418,9 +426,49 @@ p.comment-form-email {
         margin-top: 2px;
     }
     
+    li.recentcomments > a {
+        display: inline-block;
+        margin-left: 4px !important;
+    }
+    
     .widget_custom_html {
         padding: 0;
         border: 0;
+    }
+    
+    .wp-calendar-table {
+        margin-bottom: 2px;
+    }
+    
+    .wp-calendar-table caption {
+        font-size: 12px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .wp-calendar-table th,
+    .wp-calendar-table td {
+        text-align: center;
+    }
+    
+    .wp-calendar-table a,
+    .wp-calendar-nav a {
+        font-weight: 700;
+    }
+    
+    .wp-calendar-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .wp-calendar-nav-prev,
+    .wp-calendar-nav-next {
+        display: block;
+        flex: 1 1 auto;
+    }
+    
+    .wp-calendar-nav-next {
+        text-align: right;
     }
 }
 
