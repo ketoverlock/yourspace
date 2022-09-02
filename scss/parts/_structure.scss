@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .site-branding {
@@ -124,6 +123,11 @@
     a {
         color: $orange-dark;
     }
+}
+
+.sticky {
+    padding: 2px;
+    border: 1px solid $orange-light;
 }
 
 .entry-meta {
@@ -306,6 +310,14 @@
 
 .comment-respond {
     margin-top: 10px;
+}
+
+.bypostauthor .comment-meta {
+    background: $blue-mid;
+}
+
+.bypostauthor .comment-content {
+    background: $blue-light;
 }
 
 .comment-form {

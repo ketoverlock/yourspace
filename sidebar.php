@@ -16,7 +16,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
     
     <?php if (get_theme_mod('profile_display')) : ?>
     <div id="profile" class="profile-info">
-        <h2 class="profile-title"><?php echo esc_attr(get_theme_mod('profile_title')); ?></h2>
+        <h2 class="profile-title"><?php echo esc_html(get_theme_mod('profile_title')); ?></h2>
         
         <div class="profile-content">
             

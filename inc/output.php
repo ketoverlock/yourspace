@@ -26,7 +26,7 @@ function ys_customize_css() {
         
         <?php if ($blue_mid) : ?>
         
-        .sidebar .widget-title, .sidebar .wp-calendar-table caption, .primary-navigation, .primary-navigation .menu .sub-menu, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link, .wp-block-button__link, .mobile-navigation { background-color: <?php echo $blue_mid; ?>; } .sidebar .widget, input, select, textarea, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link, .wp-block-button__link { border-color: <?php echo $blue_mid; ?>; }
+        .sidebar .widget-title, .sidebar .wp-calendar-table caption, .primary-navigation, .primary-navigation .menu .sub-menu, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link, .wp-block-button__link, .mobile-navigation, .bypostauthor .comment-meta { background-color: <?php echo $blue_mid; ?>; } .sidebar .widget, input, select, textarea, button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link, .wp-block-button__link { border-color: <?php echo $blue_mid; ?>; }
         
         <?php endif; ?>
         
@@ -38,7 +38,7 @@ function ys_customize_css() {
         
         <?php if ($blue_light) : ?>
         
-        .sidebar li, blockquote { background-color: <?php echo $blue_light; ?>; }
+        .sidebar li, blockquote, .bypostauthor .comment-content { background-color: <?php echo $blue_light; ?>; }
         
         <?php endif; ?>
         
@@ -55,7 +55,7 @@ function ys_customize_css() {
         
         <?php if ($orange_light): ?>
         
-        .blurbs-title,.entry-title,.page-title,.comments-title,.comment-reply-title,.woocommerce-tabs h2,.related>h2, .comment-content { background-color: <?php echo $orange_light; ?>; } input:hover,input:focus,input:active,select:hover,select:focus,select:active,textarea:hover,textarea:focus,textarea:active { border-color: <?php echo $orange_light; ?>; } fieldset legend, .pagination .current { color: <?php echo $orange_light; ?>; }
+        .blurbs-title,.entry-title,.page-title,.comments-title,.comment-reply-title,.woocommerce-tabs h2,.related>h2, .comment-content { background-color: <?php echo $orange_light; ?>; } input:hover,input:focus,input:active,select:hover,select:focus,select:active,textarea:hover,textarea:focus,textarea:active, .sticky { border-color: <?php echo $orange_light; ?>; } fieldset legend, .pagination .current { color: <?php echo $orange_light; ?>; }
         
         <?php endif; ?>
         

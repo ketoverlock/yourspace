@@ -17,10 +17,21 @@ function yourspace_sanitize_js_code($input){
     return base64_encode($input);
 }
 
-
 //output escape function    
 function yourspace_escape_js_output($input){
     return esc_textarea( base64_decode($input) );
+}
+
+function yourspace_sanitize_checkbox( $input ){
+    return ( isset( $input ) ? true : false );
+}
+
+function yourspace_sanitize_image( $input ) {
+    $filetype = wp_check_filetype( $input );
+    if ( $filetype['ext'] && wp_ext2type( $filetype['ext'] ) === 'image' ) {
+        return esc_url( $input );
+    }
+    return '';
 }
 
 /****************************************************************
@@ -38,7 +49,10 @@ function yourspace_customizer( $wp_customize ) {
     ****************************************************************/
     
     // Dark Blue
-    $wp_customize->add_setting('blue_dark', array('default' => '#062fa5'));
+    $wp_customize->add_setting('blue_dark', array(
+        'default' => '#062fa5',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blue_dark', 
         array(
             'label'     => __( 'Dark Blue', 'yourspace' ),
@@ -48,7 +62,10 @@ function yourspace_customizer( $wp_customize ) {
     );
     
     // Medium Blue 1
-    $wp_customize->add_setting('blue_mid', array('default' => '#6699ce'));
+    $wp_customize->add_setting('blue_mid', array(
+        'default' => '#6699ce',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blue_mid', 
         array(
             'label'     => __( 'Medium Blue 1', 'yourspace' ),
@@ -58,7 +75,10 @@ function yourspace_customizer( $wp_customize ) {
     );
     
     // Medium Blue 1
-    $wp_customize->add_setting('blue_mid_alt', array('default' => '#afd0ef'));
+    $wp_customize->add_setting('blue_mid_alt', array(
+        'default' => '#afd0ef',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blue_mid_alt', 
         array(
             'label'     => __( 'Medium Blue 2', 'yourspace' ),
@@ -68,7 +88,10 @@ function yourspace_customizer( $wp_customize ) {
     );
     
     // Light Blue
-    $wp_customize->add_setting('blue_light', array('default' => '#d5e7fb'));
+    $wp_customize->add_setting('blue_light', array(
+        'default' => '#d5e7fb',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blue_light', 
         array(
             'label'     => __( 'Light Blue', 'yourspace' ),
@@ -78,7 +101,10 @@ function yourspace_customizer( $wp_customize ) {
     );
     
     // Dark Orange
-    $wp_customize->add_setting('orange_dark', array('default' => '#df7a36'));
+    $wp_customize->add_setting('orange_dark', array(
+        'default' => '#df7a36',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'orange_dark', 
         array(
             'label'     => __( 'Dark Orange', 'yourspace' ),
@@ -88,7 +114,10 @@ function yourspace_customizer( $wp_customize ) {
     );
     
     // Medium Orange
-    $wp_customize->add_setting('orange_mid', array('default' => '#F3983E'));
+    $wp_customize->add_setting('orange_mid', array(
+        'default' => '#F3983E',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'orange_mid', 
         array(
             'label'     => __( 'Dark Orange 2', 'yourspace' ),
@@ -98,7 +127,10 @@ function yourspace_customizer( $wp_customize ) {
     );
     
     // Light Orange
-    $wp_customize->add_setting('orange_light', array('default' => '#ffcc95'));
+    $wp_customize->add_setting('orange_light', array(
+        'default' => '#ffcc95',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'orange_light', 
         array(
             'label'     => __( 'Light Orange', 'yourspace' ),
@@ -122,13 +154,14 @@ function yourspace_customizer( $wp_customize ) {
     
     // Profile Checkbox
     $wp_customize->add_setting( 'profile_display', array(
-        'default'   => 1
+        'default'   => 1,
+        'sanitize_callback' => 'yourspace_sanitize_checkbox'
     ));
     $wp_customize->add_control( 'profile_display', array(
         'type'          => 'checkbox',
         'section'       => 'yourspace_profile',
         'label'         => __( 'Display Profile Info?', 'yourspace' ),
-        'description'   => __( 'Uncheck to remove profile section.' ),
+        'description'   => __( 'Uncheck to remove profile section.', 'yourspace' ),
     ) );
     
     // Profile Title
@@ -145,7 +178,9 @@ function yourspace_customizer( $wp_customize ) {
 
 
     // Profile Image
-    $wp_customize->add_setting('profile_photo');
+    $wp_customize->add_setting('profile_photo', array(
+        'sanitize_callback' => 'yourspace_sanitize_image',
+    ));
     $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'profile_photo',
         array(
             'label'     => __( 'Profile Image', 'yourspace' ),
@@ -220,7 +255,7 @@ function yourspace_customizer( $wp_customize ) {
     $wp_customize->add_control( 'head_code', array(
         'type'        => 'textarea',
         'section'     => 'yourspace_snippets', 
-        'label'       => __( 'Head Code' ),
+        'label'       => __( 'Head Code', 'yourspace' ),
         'description' => __( 'Code input here will print in the head section.', 'yourspace' ),
         'settings'      => 'head_code',
     ) );
@@ -235,7 +270,7 @@ function yourspace_customizer( $wp_customize ) {
     $wp_customize->add_control( 'body_code', array(
         'type'        => 'textarea',
         'section'     => 'yourspace_snippets',
-        'label'       => __( 'Body Code' ),
+        'label'       => __( 'Body Code', 'yourspace' ),
         'description' => __( 'Code input here will print just after the body tag.', 'yourspace' ),
         'settings'      => 'body_code',
     ) );

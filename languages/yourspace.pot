@@ -136,27 +136,24 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "_s"
+msgid "YourSpace"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://underscores.me/"
+msgid "http://yourspace.preview.overlockdev.com/"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
-"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
-"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
-"theme out there. That's what I'm here for."
+"A theme built in 2020 but meant for 2006."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Automattic"
+msgid "Overlock Design Company, LLC"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://automattic.com/"
+msgid "https://overlockdesign.co"
 msgstr ""
 
 #: comments.php:40
