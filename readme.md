@@ -6,6 +6,10 @@ I built this theme early in the pandemic. Since then I've been slowly toying awa
 
 It's based on the Underscores theme.
 
+## Installation-Ready Theme
+
+This repo is the full source code of the theme. If you're looking just for an installable WordPress file, you can get it here: https://ko-fi.com/s/144f0a5264
+
 ## How do I edit this theme?
 
 All of the stylesheets are written in SCSS and in the /scss directory. I've included a gulpfile that automatically compiles/minifies the scss and JS. You should be able to download the theme, run `npm install` to install the correct dependencies and then just run `gulp` to start the file watching and compiling process.
