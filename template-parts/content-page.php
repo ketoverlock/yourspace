@@ -42,7 +42,7 @@
 					),
 					get_the_title()
 				),
-				'<span class="edit-link">',
+				'<span class="edit-link"><i class="fas fa-edit" aria-hidden="true"></i>',
 				'</span>'
 			);
 			?>
