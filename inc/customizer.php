@@ -26,14 +26,6 @@ function yourspace_sanitize_checkbox( $input ){
     return ( isset( $input ) ? true : false );
 }
 
-function yourspace_sanitize_image( $input ) {
-    $filetype = wp_check_filetype( $input );
-    if ( $filetype['ext'] && wp_ext2type( $filetype['ext'] ) === 'image' ) {
-        return esc_url( $input );
-    }
-    return '';
-}
-
 /****************************************************************
 
     Customizer Inputs
@@ -179,7 +171,7 @@ function yourspace_customizer( $wp_customize ) {
 
     // Profile Image
     $wp_customize->add_setting('profile_photo', array(
-        'sanitize_callback' => 'yourspace_sanitize_image',
+        'sanitize_callback' => 'absint',
     ));
     $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'profile_photo',
         array(
